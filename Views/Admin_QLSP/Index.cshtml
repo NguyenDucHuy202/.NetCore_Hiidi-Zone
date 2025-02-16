@@ -1,0 +1,75 @@
+﻿@model IEnumerable<Hiidi_Zone_Ecommerce.Data.SanPham>
+
+@{
+    ViewData["Title"] = "Danh sách sản phẩm";
+    Layout = "~/Views/Shared/Layout/Admin/_LayoutAdmin.cshtml";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2 class="text-primary">📦 Danh sách sản phẩm</h2>
+        <a asp-action="Create" class="btn btn-success"><i class="fas fa-plus"></i> Thêm sản phẩm</a>
+    </div>
+
+    <div class="mb-3">
+        <input type="text" id="searchInput" class="form-control" placeholder="🔍 Tìm kiếm sản phẩm..." onkeyup="searchTable()">
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-hover table-bordered text-center">
+            <thead class="table-dark">
+                <tr>
+                    <th>Tên sản phẩm</th>
+                    <th>Mô tả</th>
+                    <th>Giá (VND)</th>
+                    <th>Tồn kho</th>
+                    <th>Ngày tạo</th>
+                    <th>Danh mục</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.Ten)</td>
+                        <td>@Html.DisplayFor(modelItem => item.MoTa)</td>
+                        <td class="text-success fw-bold">@Html.DisplayFor(modelItem => item.Gia)</td>
+                        <td>
+                            <span class="badge bg-@(item.TonKho > 5 ? "success" : "danger")">@Html.DisplayFor(modelItem => item.TonKho)</span>
+                        </td>
+                        <td>@Html.DisplayFor(modelItem => item.NgayTao)</td>
+                        <td>
+                            <span class="badge bg-info">@Html.DisplayFor(modelItem => item.DanhMuc.Ten)</span>
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm">
+                                <i class="fas fa-edit"></i>
+                            </a>
+                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm">
+                                <i class="fas fa-info-circle"></i>
+                            </a>
+                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">
+                                <i class="fas fa-trash-alt"></i>
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function searchTable() {
+            let input = document.getElementById("searchInput").value.toLowerCase();
+            let rows = document.querySelectorAll("tbody tr");
+
+            rows.forEach(row => {
+                let text = row.textContent.toLowerCase();
+                row.style.display = text.includes(input) ? "" : "none";
+            });
+        }
+    </script>
+}

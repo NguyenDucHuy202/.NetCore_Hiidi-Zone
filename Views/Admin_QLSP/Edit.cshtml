@@ -1,0 +1,72 @@
+﻿@model Hiidi_Zone_Ecommerce.Data.SanPham
+
+@{
+    ViewData["Title"] = "Chỉnh sửa sản phẩm";
+    Layout = "~/Views/Shared/Layout/Admin/_LayoutAdmin.cshtml";
+}
+
+<div class="container mt-4">
+    <h2 class="text-primary">📝 Chỉnh sửa sản phẩm</h2>
+    <hr />
+
+    <div class="row">
+        <div class="col-md-6">
+            <form asp-action="Edit">
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+                <input type="hidden" asp-for="Id" />
+
+                <div class="mb-3">
+                    <label asp-for="Ten" class="form-label fw-bold">Tên sản phẩm</label>
+                    <input asp-for="Ten" class="form-control" />
+                    <span asp-validation-for="Ten" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="MoTa" class="form-label fw-bold">Mô tả</label>
+                    <textarea asp-for="MoTa" class="form-control" rows="3"></textarea>
+                    <span asp-validation-for="MoTa" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Gia" class="form-label fw-bold">Giá (VND)</label>
+                    <input asp-for="Gia" type="number" class="form-control" min="0" />
+                    <span asp-validation-for="Gia" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="TonKho" class="form-label fw-bold">Tồn kho</label>
+                    <input asp-for="TonKho" type="number" class="form-control" min="0" />
+                    <span asp-validation-for="TonKho" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="DanhMucId" class="form-label fw-bold">Danh mục</label>
+                    <select asp-for="DanhMucId" class="form-control" asp-items="ViewBag.DanhMucId"></select>
+                    <span asp-validation-for="DanhMucId" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="NgayTao" class="form-label fw-bold">Ngày tạo</label>
+                    <input asp-for="NgayTao" type="date" class="form-control" />
+                    <span asp-validation-for="NgayTao" class="text-danger"></span>
+                </div>
+
+                <div class="d-flex gap-2">
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> Lưu thay đổi</button>
+                    <a asp-action="Index" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Hủy</a>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-md-4">
+            <h5 class="text-muted">Ảnh sản phẩm</h5>
+            <img src="#" alt="Ảnh sản phẩm" class="img-fluid rounded shadow-sm" id="previewImage">
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

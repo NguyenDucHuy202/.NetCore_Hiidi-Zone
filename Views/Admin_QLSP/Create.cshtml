@@ -1,0 +1,65 @@
+﻿@model Hiidi_Zone_Ecommerce.Data.SanPham
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/Layout/Admin/_LayoutAdmin.cshtml";
+}
+
+@{
+    Layout = "~/Views/Shared/Layout/Admin/_LayoutAdmin.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="card shadow-lg border-0 rounded-3">
+        <div class="card-header bg-primary text-white text-center">
+            <h3 class="m-0">Thêm Sản Phẩm</h3>
+        </div>
+        <div class="card-body p-4">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                <div class="mb-3">
+                    <label asp-for="Ten" class="form-label fw-bold">Tên sản phẩm</label>
+                    <input asp-for="Ten" class="form-control" placeholder="Nhập tên sản phẩm" />
+                    <span asp-validation-for="Ten" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="MoTa" class="form-label fw-bold">Mô tả</label>
+                    <textarea asp-for="MoTa" class="form-control" rows="3" placeholder="Nhập mô tả"></textarea>
+                    <span asp-validation-for="MoTa" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Gia" class="form-label fw-bold">Giá sản phẩm</label>
+                    <input asp-for="Gia" class="form-control" type="number" placeholder="Nhập giá" />
+                    <span asp-validation-for="Gia" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="TonKho" class="form-label fw-bold">Số lượng tồn kho</label>
+                    <input asp-for="TonKho" class="form-control" type="number" placeholder="Nhập số lượng" />
+                    <span asp-validation-for="TonKho" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="DanhMucId" class="form-label fw-bold">Danh mục</label>
+                    <select asp-for="DanhMucId" class="form-select" asp-items="ViewBag.DanhMucId">
+                        <option selected disabled>Chọn danh mục</option>
+                    </select>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <a asp-action="Index" class="btn btn-secondary">⬅ Quay lại</a>
+                    <button type="submit" class="btn btn-success">✅ Tạo sản phẩm</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

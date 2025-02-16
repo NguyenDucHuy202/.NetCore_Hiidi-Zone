@@ -1,0 +1,55 @@
+﻿@model Hiidi_Zone_Ecommerce.Data.SanPham
+
+@{
+    ViewData["Title"] = "Xóa sản phẩm";
+    Layout = "~/Views/Shared/Layout/Admin/_LayoutAdmin.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="card shadow-lg border-0 rounded-3">
+        <div class="card-header bg-danger text-white text-center">
+            <h3 class="m-0">⚠ Xóa sản phẩm</h3>
+        </div>
+        <div class="card-body p-4">
+            <h5 class="text-center text-danger">Bạn có chắc chắn muốn xóa sản phẩm này?</h5>
+            <hr />
+
+            <dl class="row">
+                <dt class="col-sm-3 fw-bold">Tên sản phẩm</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Ten)</dd>
+
+                <dt class="col-sm-3 fw-bold">Mô tả</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.MoTa)</dd>
+
+                <dt class="col-sm-3 fw-bold">Giá</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Gia) VND</dd>
+
+                <dt class="col-sm-3 fw-bold">Số lượng tồn</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.TonKho)</dd>
+
+                <dt class="col-sm-3 fw-bold">Ngày tạo</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.NgayTao)</dd>
+
+                <dt class="col-sm-3 fw-bold">Danh mục</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.DanhMuc.Ten)</dd>
+            </dl>
+
+            <div class="d-flex justify-content-between">
+                <a asp-action="Index" class="btn btn-secondary">⬅ Quay lại</a>
+
+                <form asp-action="Delete" onsubmit="return confirmDelete()">
+                    <input type="hidden" asp-for="Id" />
+                    <button type="submit" class="btn btn-danger">🗑 Xóa sản phẩm</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function confirmDelete() {
+            return confirm("Bạn có chắc chắn muốn xóa sản phẩm này? Hành động này không thể hoàn tác!");
+        }
+    </script>
+}
