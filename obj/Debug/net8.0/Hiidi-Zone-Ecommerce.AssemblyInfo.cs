@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Hiidi-Zone-Ecommerce")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f78a5909d7c28f21b01d419c6afda30f1fdb218b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Hiidi-Zone-Ecommerce")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Hiidi-Zone-Ecommerce")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
