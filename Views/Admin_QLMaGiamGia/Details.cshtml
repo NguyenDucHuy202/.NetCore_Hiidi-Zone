@@ -1,0 +1,38 @@
+﻿@model Hiidi_Zone_Ecommerce.Data.MaGiamGium
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/Layout/Admin/_LayoutAdmin.cshtml";
+}
+
+<div class="container mt-4">
+    <div class="card shadow-lg p-4">
+        <h2 class="text-primary">Chi Tiết Mã Giảm Giá</h2>
+        <hr />
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <dl class="row">
+                    <dt class="col-sm-4 fw-bold">Mã giảm</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.Ma)</dd>
+
+                    <dt class="col-sm-4 fw-bold">% Giảm</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.Giam)</dd>
+
+                    <dt class="col-sm-4 fw-bold">Ngày Hết Hạn</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.NgayHetHan)</dd>
+
+                    <dt class="col-sm-4 fw-bold">Số lượng mã</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.SoLuong)</dd>
+
+                    <dt class="col-sm-4 fw-bold">Trạng Thái</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.TrangThai)</dd>
+                </dl>
+
+                <div class="d-flex justify-content-between mt-3">
+                    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Chỉnh Sửa</a>
+                    <a asp-action="Index" class="btn btn-secondary">Quay lại danh sách</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

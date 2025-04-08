@@ -1,0 +1,79 @@
+﻿@model IEnumerable<Hiidi_Zone_Ecommerce.Data.DanhMuc>
+@{
+    ViewData["Title"] = "Index_AirPods";
+    Layout = "~/Views/Shared/Layout/User/_LayoutUser.cshtml";
+}
+
+<main class="container mx-auto flex justify-between items-center py-12 px-6">
+    <div class="container mt-5">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="~/img/Phone14.png" class="d-block w-100" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="~/img/panelPhone.png" class="d-block w-100" alt="Image 2">
+                </div>
+            </div>
+
+            <!-- Previous Button -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+
+            <!-- Next Button -->
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+</main>
+
+
+<div class="bg-black">
+    @foreach (var block in Model.Where(t => t.Id == 5))
+    {
+        <div class="container bg-black">
+            <!-- Tiêu đề -->
+            <div class="container mx-auto p-4">
+                <div class="text-center mb-8">
+                    <h1 class="text-3xl font-semibold text-white">
+                        <i class="fab fa-apple"></i>
+                        @block.Ten
+                    </h1>
+                </div>
+
+                @{
+                    var sanPhams = block.SanPhams.Where(t => t.DanhMuc.Id == block.Id).ToList();
+                }
+
+                <!-- Hiển thị dạng lưới -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    @foreach (var item in sanPhams)
+                    {
+                        <a asp-action="Details" asp-route-id="@item.Id">
+                            <div class="bg-gray-700 p-4 rounded-lg text-center">
+                                <img alt="@item.Ten" class="mx-auto mb-4" height="200"
+                                     src="/img/@item.DanhMuc.Ten/@(item.HinhAnhSanPhams?.FirstOrDefault(p => p.SanPhamId == item.Id)?.DuongDan ?? "default.png")"
+                                     width="200" />
+                                <p>@item.Ten</p>
+                                <p class="text-xl font-bold">
+                                    @item.Gia.ToString("N0")₫
+
+                                </p>
+                                <p class="text-orange-500">Online giá rẻ quá</p>
+                            </div>
+                        </a>
+                    }
+                </div>
+
+            </div>
+        </div>
+    }
+
+
+</div>
+
+
+
+

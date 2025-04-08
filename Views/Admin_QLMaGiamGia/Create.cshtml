@@ -1,0 +1,49 @@
+﻿@model Hiidi_Zone_Ecommerce.Data.MaGiamGium
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/Layout/Admin/_LayoutAdmin.cshtml";
+}
+
+<div class="container mt-4">
+    <div class="card shadow-lg p-4">
+        <h2 class="text-primary">Tạo Mã Giảm Giá</h2>
+        <hr />
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                    <div class="mb-3">
+                        <label asp-for="Ma" class="form-label fw-bold"></label>
+                        <input asp-for="Ma" class="form-control" placeholder="Nhập mã giảm giá..." />
+                        <span asp-validation-for="Ma" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Giam" class="form-label fw-bold"></label>
+                        <input asp-for="Giam" class="form-control" placeholder="Nhập số tiền giảm..." />
+                        <span asp-validation-for="Giam" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="NgayHetHan" class="form-label fw-bold"></label>
+                        <input asp-for="NgayHetHan" type="date" class="form-control" />
+                        <span asp-validation-for="NgayHetHan" class="text-danger"></span>
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary">Tạo</button>
+                        <a asp-action="Index" class="btn btn-secondary">Quay lại danh sách</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

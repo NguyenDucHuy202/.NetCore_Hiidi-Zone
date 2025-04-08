@@ -1,0 +1,43 @@
+﻿@model Hiidi_Zone_Ecommerce.Data.MaGiamGium
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/Layout/Admin/_LayoutAdmin.cshtml";
+}
+
+<div class="container mt-4">
+    <div class="card shadow-lg p-4">
+        <h2 class="text-danger">Xóa Mã Giảm Giá</h2>
+        <hr />
+        <p class="text-warning fw-bold">Bạn có chắc chắn muốn xóa mục này không?</p>
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <dl class="row">
+                    <dt class="col-sm-4">@Html.DisplayNameFor(model => model.Ma)</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.Ma)</dd>
+
+                    <dt class="col-sm-4">@Html.DisplayNameFor(model => model.Giam)</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.Giam)</dd>
+
+                    <dt class="col-sm-4">@Html.DisplayNameFor(model => model.NgayHetHan)</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.NgayHetHan)</dd>
+
+                    <dt class="col-sm-4">@Html.DisplayNameFor(model => model.SoLuong)</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.SoLuong)</dd>
+
+                    <dt class="col-sm-4">@Html.DisplayNameFor(model => model.TrangThai)</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.TrangThai)</dd>
+                </dl>
+
+                <form asp-action="Delete" class="mt-3">
+                    <input type="hidden" asp-for="Id" />
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-danger">Xóa</button>
+                        <a asp-action="Index" class="btn btn-secondary">Quay lại danh sách</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+s

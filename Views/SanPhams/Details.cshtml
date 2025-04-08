@@ -1,0 +1,279 @@
+﻿@model Hiidi_Zone_Ecommerce.Data.SanPham
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/Layout/User/_LayoutUser.cshtml";
+}
+<script>
+    function showContent(contentId) {
+    const contents = document.querySelectorAll('.content');
+    contents.forEach(content => content.classList.add('hidden'));
+    document.getElementById(contentId).classList.remove('hidden');
+
+    const buttons = document.querySelectorAll('.tab-button');
+    buttons.forEach(button => button.classList.remove('bg-blue-500', 'text-white'));
+    document.getElementById(contentId + '-button').classList.add('bg-blue-500', 'text-white');
+    }
+
+    function toggleContent(contentId) {
+    const content = document.getElementById(contentId);
+    const icon = document.getElementById(contentId + '-icon');
+    if (content.classList.contains('hidden')) {
+    content.classList.remove('hidden');
+    icon.textContent = '-';
+    } else {
+    content.classList.add('hidden');
+    icon.textContent = '+';
+    }
+    }
+    let currentIndex = 0;
+
+    function changeImage(src) {
+    document.getElementById('mainImage').src = src;
+    currentIndex = images.indexOf(src);
+    }
+</script>
+<div style="padding-top:70px">
+    <div class="bg-gray-900 text-white p-10" >
+        <div class="container mx-auto p-4">
+            <div class="flex flex-col lg:flex-row">
+                <!-- Left Section -->
+                <div class="lg:w-1/2 flex flex-col items-center" >
+                    <div class="relative">
+                        <img id="mainImage" alt="Front and back view of iPhone 16 in green color" class="w-full" height="800"
+                        style="border-radius:20px"
+                        src="/img/@Model.DanhMuc.Ten/@(Model.HinhAnhSanPhams.First().DuongDan)"
+                        width="400" />
+
+                    </div>
+                    @{
+                        var count = 2;
+                    }
+                    <div class="flex mt-4 space-x-2">
+                        @foreach(var item in Model.HinhAnhSanPhams)
+                        {
+                            <img alt="Thumbnail @count" class="w-16 h-16 thumbnail" height="60"
+                            src="/img/@Model.DanhMuc.Ten/@item.DuongDan"
+                            width="60" onclick="changeImage(this.src)" />
+
+                            count++;
+                        }
+
+              
+                </div>
+            </div>
+            <!-- Right Section -->
+            <div class="lg:w-1/2 lg:pl-8 mt-8 lg:mt-0">
+                <h1 class="text-3xl font-bold">@Model.Ten</h1>
+                <p class="text-gray-400">Giá và khuyến mãi tại: Hồ Chí Minh</p>
+                <div class="flex items-center mt-2">
+                    <span class="text-2xl font-bold text-yellow-400">@Model.Gia.ToString("N0")đ</span>
+                    <span class="text-gray-400 line-through ml-2">@Model.Gia.ToString("N0")đ</span>
+                    <span class="text-red-500 ml-2">-6%</span>
+                </div>
+                <div class="mt-4">
+                    <span class="font-bold">Dung lượng</span>
+                    <div class="flex space-x-2 mt-2">
+                        <button class="px-4 py-2 border border-gray-400 rounded">128GB</button>
+                        <button class="px-4 py-2 border border-gray-400 rounded">256GB</button>
+                        <button class="px-4 py-2 border border-gray-400 rounded">512GB</button>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <span class="font-bold">Màu: Xanh Mòng Két</span>
+                    <div class="flex space-x-2 mt-2">
+                        <button class="w-8 h-8 rounded-full bg-gray-400"></button>
+                        <button class="w-8 h-8 rounded-full bg-blue-400"></button>
+                        <button class="w-8 h-8 rounded-full bg-pink-400"></button>
+                        <button class="w-8 h-8 rounded-full bg-purple-400"></button>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <img alt="Promotional banner" class="w-full" height="100"
+                         src="~/img/lienhegiare.jpg"
+                         width="600" />
+                </div>
+                <div class="mt-4 p-4 bg-gray-700 rounded">
+                    <h2 class="font-bold">Khuyến mãi trị giá 1.500.000₫</h2>
+                    <p class="text-gray-400">Giá và khuyến mãi dự kiến áp dụng đến 23:59 | 09/02</p>
+                    <ul class="list-disc list-inside mt-2 text-gray-400">
+                        <li>Phiếu mua hàng mua Macbook Pro trị giá 1.000.000₫</li>
+                        <li>Phiếu mua hàng Macbook Air trị giá 500.000₫</li>
+                        <li>Phiếu mua hàng sản phẩm giá niêm yết từ 5 triệu thuộc các nhóm TAI NGHE - LOA hãng HARMAN KARDON, JBL, MONSTER, KLIPSCH, MARSHALL, SONY; Smartwatch hãng HUAWEI, GARMIN, SAMSUNG, INNO, OPPO, AMAZFIT trị giá 500.000₫</li>
+                        <li>Nhập mã VNPAY100T01 giảm giá 4.000.000₫ hoặc 150.000₫ (áp dụng duy nhất 01 đơn hàng) khi thanh toán qua VNPAY-QR. <a class="text-blue-400" href="#">Xem chi tiết tại đây</a></li>
+                        <li>Giảm thêm 200.000₫ đến 2.000.000₫ (Không kèm ưu đãi thanh toán qua cổng, mua kèm) <a class="text-blue-400" href="#">Xem chi tiết</a></li>
+                    </ul>
+                </div>
+                <div class="mt-4">
+                    
+                    <a class="text-blue-400" href="#">Xem TopZone có hàng &gt;</a>
+                     
+                </div>
+                        <div class="mt-4">
+                            <form asp-controller="GioHang" asp-action="ThemVaoGioHang" method="post">
+                                <input type="hidden" name="Id" value="@Model.Id" />
+                                <input type="hidden" name="soLuong" value="1" min="1" />
+                                <button type="submit" class="w-full py-3 bg-blue-600 rounded text-white font-bold">Mua ngay</button>
+                            </form>
+                        </div>
+                <div class="mt-4 flex space-x-2">
+                    <button class="flex-1 py-3 border border-gray-400 rounded text-center">Mua trả chậm 0% Qua công ty tài chính</button>
+                    <button class="flex-1 py-3 border border-gray-400 rounded text-center">Trả chậm 0% qua thẻ Visa, Mastercard, JCB, Amex</button>
+                </div>
+                <div class="mt-4">
+                    <p class="text-gray-400">Bộ sản phẩm gồm: Hộp, Sách hướng dẫn, Cáp, Cây lấy sim</p>
+                    <p class="text-gray-400">Bảo hành chính hãng 12 tháng tại 3049 siêu thị toàn quốc <a class="text-blue-400" href="#">Xem chi tiết chính sách bảo hành đổi trả</a></p>
+                </div>
+                <div class="mt-4">
+                    <p class="text-gray-400">Gọi đặt mua: <a class="text-blue-400" href="tel:18006968">1800.6968</a> (8:00 - 21:30)</p>
+                    <p class="text-gray-400">Gọi bảo hành: <a class="text-blue-400" href="tel:18006842">1800.6842</a> (8:00 - 21:30)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  -->
+<div class="container mx-auto p-4">
+    <h1 class="text-2xl font-bold text-center mb-8">Phụ kiện gợi ý cho iPhone</h1>
+    <div class="flex flex-wrap justify-center items-center space-x-4">
+        <div class="text-center w-64 border rounded-lg p-4">
+            <img alt="iPhone 16 Pro 128GB" class="mx-auto mb-2" height="150" src="https://placehold.co/150x150" width="150" />
+            <p>@Model.Ten</p>
+            <p class="text-lg font-bold text-black">@Model.Gia</p>
+            <p class="text-gray-500 line-through">28.990.000₫</p>
+            <p class="text-red-500">-4%</p>
+        </div>
+        <div class="text-4xl font-bold">+</div>
+        <div class="text-center w-64 border rounded-lg p-4">
+            <div class="flex justify-center mb-2">
+                <i class="fas fa-check-circle text-blue-500"></i>
+            </div>
+            <img alt="Adapter sạc Apple USB-C 20W" class="mx-auto mb-2" height="100" src="https://placehold.co/100x100" width="100" />
+            <p>Adapter sạc Apple USB-C 20W</p>
+            <p class="text-lg font-bold text-black">480.000₫</p>
+            <p class="text-gray-500 line-through">550.000₫</p>
+            <p class="text-red-500">-12%</p>
+        </div>
+        <div class="text-4xl font-bold">+</div>
+        <div class="text-center w-64 border rounded-lg p-4">
+            <div class="flex justify-center mb-2">
+                <i class="fas fa-check-circle text-blue-500"></i>
+            </div>
+            <img alt="Ốp lưng MagSafe iPhone 16 Pro Nhựa" class="mx-auto mb-2" height="100" src="https://placehold.co/100x100" width="100" />
+            <p>Ốp lưng MagSafe iPhone 16 Pro Nhựa</p>
+            <p class="text-lg font-bold text-black">1.285.000₫</p>
+            <p class="text-gray-500 line-through">1.430.000₫</p>
+            <p class="text-red-500">-10%</p>
+        </div>
+        <div class="text-4xl font-bold">+</div>
+        <div class="text-center w-64 border rounded-lg p-4">
+            <div class="flex justify-center mb-2">
+                <i class="fas fa-check-circle text-blue-500"></i>
+            </div>
+            <img alt="AirPods 4" class="mx-auto mb-2" height="100" src="https://placehold.co/100x100" width="100" />
+            <p>AirPods 4</p>
+            <p class="text-lg font-bold text-black">2.990.000₫</p>
+            <p class="text-gray-500 line-through">3.490.000₫</p>
+            <p class="text-red-500">-14%</p>
+        </div>
+    </div>
+    <div class="flex justify-center items-center mt-8">
+        <div class="text-center mr-4">
+            <p class="text-lg font-bold text-black">32.345.000₫</p>
+            <p class="text-gray-500 line-through">34.460.000₫</p>
+            <p class="text-red-500">-6%</p>
+        </div>
+        <button class="bg-blue-500 text-white px-6 py-2 rounded-lg">Mua 4 sản phẩm</button>
+    </div>
+    <!-- Product Details Section -->
+    <div class="max-w-2xl mx-auto mt-10 bg-white p-6 rounded-lg shadow-md">
+        <div class="flex justify-center space-x-4 mb-6">
+            <button id="description-button" class="tab-button px-4 py-2 bg-white border border-gray-300 rounded-md hover:bg-blue-500 hover:text-white" onclick="showContent('description')">Mô tả</button>
+            <button id="specs-button" class="tab-button px-4 py-2 bg-blue-500 text-white border border-blue-500 rounded-md hover:bg-blue-500 hover:text-white" onclick="showContent('specs')">Thông số kỹ thuật</button>
+            <button id="reviews-button" class="tab-button px-4 py-2 bg-white border border-gray-300 rounded-md hover:bg-blue-500 hover:text-white" onclick="showContent('reviews')">Đánh giá sản phẩm</button>
+        </div>
+        <div id="description" class="content hidden">
+            <div class="border-t border-gray-300">
+                <div class="py-4">
+                    <h2 class="text-lg font-semibold">Mô tả sản phẩm</h2>
+                </div>
+                <div class="border-t border-gray-300">
+                    <div class="py-2">
+                        <p class="text-gray-700">@Model.MoTa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="specs" class="content">
+            <div class="border-t border-gray-300">
+                <div class="py-4 flex justify-between items-center">
+                    <h2 class="text-lg font-semibold">Cấu hình & Bộ nhớ</h2>
+                    <button id="specs-icon" class="text-xl" onclick="toggleContent('specs-content')">-</button>
+                </div>
+                <div id="specs-content" class="border-t border-gray-300">
+                    <div class="py-2 flex justify-between">
+                        <span class="text-gray-700">Hệ điều hành:</span>
+                        <span class="text-gray-900">iOS 18</span>
+                    </div>
+                    <div class="py-2 flex justify-between">
+                        <span class="text-gray-700">Chip xử lý (CPU):</span>
+                        <span class="text-gray-900">Apple A18 Pro 6 nhân</span>
+                    </div>
+                    <div class="py-2 flex justify-between">
+                        <span class="text-gray-700">Tốc độ CPU:</span>
+                        <span class="text-gray-900">Hãng không công bố</span>
+                    </div>
+                    <div class="py-2 flex justify-between">
+                        <span class="text-gray-700">Chip đồ họa (GPU):</span>
+                        <span class="text-gray-900">Apple GPU 6 nhân</span>
+                    </div>
+                    <div class="py-2 flex justify-between">
+                        <span class="text-gray-700">RAM:</span>
+                        <span class="text-gray-900">8 GB</span>
+                    </div>
+                    <div class="py-2 flex justify-between">
+                        <span class="text-gray-700">Dung lượng lưu trữ:</span>
+                        <span class="text-gray-900">128 GB</span>
+                    </div>
+                    <div class="py-2 flex justify-between">
+                        <span class="text-gray-700">Dung lượng còn lại (khả dụng) khoảng:</span>
+                        <span class="text-gray-900">113 GB</span>
+                    </div>
+                    <div class="py-2 flex justify-between">
+                        <span class="text-gray-700">Danh bạ:</span>
+                        <span class="text-gray-900">Không giới hạn</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="reviews" class="content hidden">
+                <div class="bg-white rounded-lg shadow-lg p-8 max-w-lg mx-auto text-center">
+                    <h2 class="text-2xl font-bold mb-4">Đánh giá sản phẩm này</h2>
+                    <p class="text-gray-600 mb-6">Nếu đã mua sản phẩm này tại TopZone. Hãy đánh giá ngay để giúp hàng ngàn người chọn mua hàng tốt nhất bạn nhé!</p>
+                    <div class="flex justify-center space-x-4 mb-4">
+                        <div class="text-center">
+                            <i class="far fa-star text-3xl text-orange-500"></i>
+                            <p class="text-gray-600 mt-2">Rất tệ</p>
+                        </div>
+                        <div class="text-center">
+                            <i class="far fa-star text-3xl text-orange-500"></i>
+                            <p class="text-gray-600 mt-2">Tệ</p>
+                        </div>
+                        <div class="text-center">
+                            <i class="far fa-star text-3xl text-orange-500"></i>
+                            <p class="text-gray-600 mt-2">Tạm ổn</p>
+                        </div>
+                        <div class="text-center">
+                            <i class="far fa-star text-3xl text-orange-500"></i>
+                            <p class="text-gray-600 mt-2">Tốt</p>
+                        </div>
+                        <div class="text-center">
+                            <i class="far fa-star text-3xl text-orange-500"></i>
+                            <p class="text-gray-600 mt-2">Rất tốt</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+</div>

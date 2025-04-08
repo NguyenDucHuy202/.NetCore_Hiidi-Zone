@@ -1,0 +1,178 @@
+﻿/* General styles */
+body {
+    font-family: Arial, sans-serif;
+}
+ p{
+    color: #ffffff;
+ }
+/* Navigation */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+nav a:hover {
+    color: #979797;
+}
+
+
+/* Buttons */
+.btn-nav {
+    background-color: #e5e7eb;
+    border-radius: 50%;
+    padding: 10px;
+    color: #6b7280;
+}
+
+/* Titles */
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+.highlight-text {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Products */
+.product-img {
+    height: 250px;
+}
+
+.product-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+}
+
+.product-price {
+    color: #d63384;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.product-desc {
+    color: black;
+    margin-top: 10px;
+}
+
+.btn-buy {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+/* Flash Sale Section */
+.flash-sale {
+    background-color: #1f2937;
+    color: white;
+    padding: 50px 0;
+}
+
+.flash-box {
+    background-color: #111827;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.flash-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: yellow;
+}
+
+.countdown {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.time-range {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Product Cards */
+.product-card {
+    background-color: #374151;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.product-card img {
+    margin: auto;
+    max-width: 100%;
+}
+
+.product-name {
+    margin-top: 10px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #9ca3af;
+}
+
+.discount {
+    color: red;
+}
+
+
+.text-center img:hover {
+    transform: scale(1.3);
+    transition: transform 0.5s;
+ 
+}
+/* Đảm bảo card có chiều cao đồng đều */
+.card-product {
+    height: 350px; /* Chiều cao cố định, tùy chỉnh theo nhu cầu */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Căn đều nội dung */
+    overflow: hidden; /* Ẩn nội dung tràn ra ngoài */
+}
+
+/* Giới hạn kích thước hình ảnh */
+.card-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
+}
+.profile-wrapper::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.2);
+}
+/* Giới hạn tên sản phẩm */
+.card-title {
+    max-height: 48px; /* Giới hạn chiều cao (khoảng 2 dòng) */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Thêm dấu "..." khi quá dài */
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Giới hạn tối đa 2 dòng */
+    -webkit-box-orient: vertical;
+    white-space: normal; /* Cho phép xuống dòng */
+}
+
+/* Tùy chỉnh thêm nếu cần */
+.card-product:hover {
+    background-color: #4b5563; /* Hiệu ứng hover */
+    transition: background-color 0.3s ease;
+}
+

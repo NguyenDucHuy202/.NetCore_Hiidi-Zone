@@ -158,7 +158,6 @@ D:\Project_ASP.net\Top-Zone\Hiidi-Zone-Ecommerce\Hiidi-Zone-Ecommerce\obj\Debug\
 D:\Project_ASP.net\Top-Zone\Hiidi-Zone-Ecommerce\Hiidi-Zone-Ecommerce\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Hiidi-Zone-Ecommerce.props
 D:\Project_ASP.net\Top-Zone\Hiidi-Zone-Ecommerce\Hiidi-Zone-Ecommerce\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Hiidi-Zone-Ecommerce.props
 D:\Project_ASP.net\Top-Zone\Hiidi-Zone-Ecommerce\Hiidi-Zone-Ecommerce\obj\Debug\net8.0\staticwebassets.pack.json
-D:\Project_ASP.net\Top-Zone\Hiidi-Zone-Ecommerce\Hiidi-Zone-Ecommerce\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 D:\Project_ASP.net\Top-Zone\Hiidi-Zone-Ecommerce\Hiidi-Zone-Ecommerce\obj\Debug\net8.0\Hiidi-Zo.4E9968F7.Up2Date
 D:\Project_ASP.net\Top-Zone\Hiidi-Zone-Ecommerce\Hiidi-Zone-Ecommerce\obj\Debug\net8.0\Hiidi-Zone-Ecommerce.dll
 D:\Project_ASP.net\Top-Zone\Hiidi-Zone-Ecommerce\Hiidi-Zone-Ecommerce\obj\Debug\net8.0\refint\Hiidi-Zone-Ecommerce.dll
@@ -287,3 +286,5 @@ D:\Project_ASP.net\Top-Zone\Hiidi-Zone-Ecommerce\Hiidi-Zone-Ecommerce\bin\Debug\
 D:\Project_ASP.net\Top-Zone\Hiidi-Zone-Ecommerce\Hiidi-Zone-Ecommerce\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 D:\Project_ASP.net\Top-Zone\Hiidi-Zone-Ecommerce\Hiidi-Zone-Ecommerce\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 D:\Project_ASP.net\Top-Zone\Hiidi-Zone-Ecommerce\Hiidi-Zone-Ecommerce\bin\Debug\net8.0\wwwroot\Admin\vendor\fontawesome-free\package.json
+D:\Project_ASP.net\Top-Zone\Hiidi-Zone-Ecommerce\Hiidi-Zone-Ecommerce\obj\Debug\net8.0\Hiidi-Zone-Ecommerce.sourcelink.json
+D:\Project_ASP.net\Top-Zone\Hiidi-Zone-Ecommerce\Hiidi-Zone-Ecommerce\bin\Debug\net8.0\BCrypt.Net-Next.dll

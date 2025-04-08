@@ -1,0 +1,46 @@
+﻿@model Hiidi_Zone_Ecommerce.Data.NguoiDung
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/Layout/Admin/_LayoutAdmin.cshtml";
+}
+
+<div class="container mt-4">
+    <div class="card shadow-sm p-4">
+        <h2 class="text-primary">Chi tiết người dùng</h2>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-3 font-weight-bold">@Html.DisplayNameFor(model => model.Ten)</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.Ten)</dd>
+
+            <dt class="col-sm-3 font-weight-bold">@Html.DisplayNameFor(model => model.Email)</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.Email)</dd>
+
+            <dt class="col-sm-3 font-weight-bold">@Html.DisplayNameFor(model => model.SoDienThoai)</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.SoDienThoai)</dd>
+
+            <dt class="col-sm-3 font-weight-bold">@Html.DisplayNameFor(model => model.NgayTao)</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.NgayTao)</dd>
+            <dt class="col-sm-3 font-weight-bold">@Html.DisplayNameFor(model => model.MatKhau)</dt>
+            <dd class="col-sm-9">
+                <input type="password" id="passwordField" class="form-control d-inline-block w-auto" value="@Model.MatKhau" readonly />
+                <button type="button" class="btn btn-sm btn-outline-secondary" onclick="togglePassword()">👁</button>
+            </dd>
+        </dl>
+        <div class="mt-3">
+            <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Chỉnh sửa</a>
+            <a asp-action="Index" class="btn btn-secondary">Quay lại danh sách</a>
+        </div>
+    </div>
+</div>
+
+<script>
+    function togglePassword() {
+        var passwordField = document.getElementById("passwordField");
+        if (passwordField.type === "password") {
+            passwordField.type = "text";
+        } else {
+            passwordField.type = "password";
+        }
+    }
+</script>

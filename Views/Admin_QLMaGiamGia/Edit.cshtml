@@ -1,0 +1,65 @@
+﻿@model Hiidi_Zone_Ecommerce.Data.MaGiamGium
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/Layout/Admin/_LayoutAdmin.cshtml";
+}
+
+<div class="container mt-4">
+    <div class="card shadow-lg p-4">
+        <h2 class="text-primary">Chỉnh Sửa Mã Giảm Giá</h2>
+        <hr />
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <form asp-action="Edit">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="Id" />
+
+                    <div class="mb-3">
+                        <label asp-for="Ma" class="form-label fw-bold"></label>
+                        <input asp-for="Ma" class="form-control" />
+                        <span asp-validation-for="Ma" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Giam" class="form-label fw-bold"></label>
+                        <input asp-for="Giam" class="form-control" />
+                        <span asp-validation-for="Giam" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="NgayHetHan" class="form-label fw-bold"></label>
+                        <input asp-for="NgayHetHan" class="form-control" type="date" />
+                        <span asp-validation-for="NgayHetHan" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="SoLuong" class="form-label fw-bold"></label>
+                        <input asp-for="SoLuong" class="form-control" />
+                        <span asp-validation-for="SoLuong" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="TrangThai" class="form-label fw-bold"></label>
+                        <select asp-for="TrangThai" class="form-select">
+                            <option value="true">Kích hoạt</option>
+                            <option value="false">Vô hiệu hóa</option>
+                        </select>
+                        <span asp-validation-for="TrangThai" class="text-danger"></span>
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-3">
+                        <button type="submit" class="btn btn-primary">Lưu</button>
+                        <a asp-action="Index" class="btn btn-secondary">Quay lại danh sách</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

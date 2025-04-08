@@ -1,0 +1,67 @@
+﻿@model Hiidi_Zone_Ecommerce.Data.HinhAnhSanPham
+
+@{
+    ViewData["Title"] = "Thêm Hình Ảnh Sản Phẩm";
+    Layout = "~/Views/Shared/Layout/Admin/_LayoutAdmin.cshtml";
+}
+
+<div class="container mt-4">
+    <h2 class="text-center text-primary">Thêm Hình Ảnh Sản Phẩm</h2>
+    <hr />
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow p-4">
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                    <!-- Chọn Sản Phẩm -->
+                    <div class="form-group mb-3">
+                        <label asp-for="SanPhamId" class="form-label fw-bold">Sản Phẩm</label>
+                        <select asp-for="SanPhamId" class="form-select" asp-items="ViewBag.SanPhamId"></select>
+                    </div>
+
+                    <!-- Đường Dẫn Ảnh -->
+                    <div class="form-group mb-3">
+                        <label asp-for="DuongDan" class="form-label fw-bold">Đường Dẫn Hình Ảnh</label>
+                        <input asp-for="DuongDan" class="form-control" placeholder="Nhập URL hình ảnh" />
+                        <span asp-validation-for="DuongDan" class="text-danger"></span>
+                    </div>
+
+                    <!-- Hiển thị ảnh preview -->
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Xem trước ảnh:</label>
+                        <img id="imagePreview" src="" class="img-thumbnail d-none" style="max-width: 100%; height: auto;" />
+                    </div>
+
+                    <!-- Nút hành động -->
+                    <div class="btn-group w-100">
+                        <button type="submit" class="btn btn-success">
+                            <i class="bi bi-check-circle"></i> Thêm Mới
+                        </button>
+                        <a asp-action="Index" class="btn btn-secondary">
+                            <i class="bi bi-arrow-left"></i> Quay Lại
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        document.getElementById("DuongDan").addEventListener("input", function() {
+            let url ="/img/Phone/" + this.value;
+            let img = document.getElementById("imagePreview");
+            if (url) {
+                img.src = url;
+                img.classList.remove("d-none");
+            } else {
+                img.classList.add("d-none");
+            }
+        });
+    </script>
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,47 @@
+﻿@model Hiidi_Zone_Ecommerce.Data.HinhAnhSanPham
+
+@{
+    ViewData["Title"] = "Chỉnh sửa hình ảnh sản phẩm";
+    Layout = "~/Views/Shared/Layout/Admin/_LayoutAdmin.cshtml";
+}
+
+<div class="container mt-4">
+    <div class="card shadow-sm">
+        <div class="card-header bg-warning text-white">
+            <h3 class="mb-0">Chỉnh sửa hình ảnh sản phẩm</h3>
+        </div>
+        <div class="card-body">
+            <form asp-action="Edit">
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+                <input type="hidden" asp-for="Id" />
+
+                <div class="mb-3">
+                    <label asp-for="SanPhamId" class="form-label">Sản phẩm</label>
+                    <select asp-for="SanPhamId" class="form-select" asp-items="ViewBag.SanPhamId"></select>
+                    <span asp-validation-for="SanPhamId" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="DuongDan" class="form-label">Đường dẫn hình ảnh</label>
+                    <input asp-for="DuongDan" class="form-control" placeholder="Nhập đường dẫn hình ảnh..." />
+                    <span asp-validation-for="DuongDan" class="text-danger"></span>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <button type="submit" class="btn btn-success">
+                        <i class="fas fa-save"></i> Lưu
+                    </button>
+                    <a asp-action="Index" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left"></i> Quay lại danh sách
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

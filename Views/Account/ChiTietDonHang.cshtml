@@ -1,0 +1,59 @@
+﻿@model Hiidi_Zone_Ecommerce.Data.DonHang
+
+@{
+    ViewData["Title"] = "Chi Tiết Đơn Hàng";
+    Layout = "~/Views/Shared/Layout/User/_LayoutUser.cshtml";
+}
+<div class="container" style="padding-top:135px">
+<div class="container mt-4">
+    <h2 class="text-center fw-bold text-primary">🛒 Chi Tiết Đơn Hàng - #@Model.Id</h2>
+
+
+    <h4 class="mt-5 text-primary fw-bold"><i class="bi bi-box-seam"></i> Danh Sách Sản Phẩm</h4>
+
+    @if (!Model.ChiTietDonHangs.Any())
+    {
+        <div class="alert alert-warning text-center mt-3">
+            <i class="bi bi-exclamation-circle"></i> Không có sản phẩm nào trong đơn hàng này.
+        </div>
+    }
+    else
+    {
+        <div class="table-responsive mt-3">
+            <table class="table table-bordered table-hover align-middle shadow-sm">
+                <thead class="table-dark text-center">
+                    <tr>
+                        <th>Mã hóa đơn</th>
+                        <th>Sản Phẩm</th>
+                        <th>Hình Ảnh</th>
+                        <th>Số Lượng</th>
+                        <th>Giá</th>
+                        <th>Thành Tiền</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    @foreach (var item in Model.ChiTietDonHangs)
+                    {
+                        <tr>
+                            <td>@item.Id</td>
+                            <td>@item.SanPham.Ten</td>
+                            <td>
+                                <img src="~/img/@item.SanPham.DanhMuc.Ten/@item.SanPham.HinhAnhSanPhams.First().DuongDan" alt="@item.SanPham.Ten" class="img-thumbnail" width="70" height="70">
+                            </td>
+                            <td class="fw-bold">@item.SoLuong</td>
+                            <td class="text-success fw-bold">@item.Gia.ToString("N0") VNĐ</td>
+                            <td class="text-danger fw-bold">@((item.SoLuong * item.Gia).ToString("N0")) VNĐ</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+
+    <div class="mt-4 text-center">
+        <a asp-action="Index" class="btn btn-secondary px-4 py-2 fw-bold">
+            <i class="bi bi-arrow-left-circle"></i> Quay Lại
+        </a>
+    </div>
+</div>
+</div>

@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Hiidi_Zone_Ecommerce.Data.NguoiDung>
+
+@{
+    ViewData["Title"] = "Quản lý Người Dùng";
+    Layout = "~/Views/Shared/Layout/Admin/_LayoutAdmin.cshtml";
+}
+
+<h1 class="mb-4">Quản lý Người Dùng</h1>
+
+<div class="mb-3 d-flex justify-content-between">
+    <a asp-action="Create" class="btn btn-primary">Thêm Người Dùng</a>
+    <input type="text" id="searchInput" class="form-control w-25" placeholder="Tìm kiếm...">
+</div>
+
+<table class="table table-bordered table-hover">
+    <thead class="table-dark">
+        <tr>
+            <th>Họ Tên</th>
+            <th>Email</th>
+            <th>Số Điện Thoại</th>
+            <th>Ngày tạo</th>
+            <th class="text-center">Hành động</th>
+        </tr>
+    </thead>
+    <tbody id="userTable">
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.Ten)</td>
+                <td>@Html.DisplayFor(modelItem => item.Email)</td>
+                <td>@Html.DisplayFor(modelItem => item.SoDienThoai)</td>
+                <td>@Html.DisplayFor(modelItem => item.NgayTao)</td>
+                <td class="text-center">
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm">Sửa</a>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm">Chi tiết</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script>
+    document.getElementById("searchInput").addEventListener("keyup", function() {
+        let filter = this.value.toLowerCase();
+        let rows = document.querySelectorAll("#userTable tr");
+        rows.forEach(row => {
+            let text = row.textContent.toLowerCase();
+            row.style.display = text.includes(filter) ? "" : "none";
+        });
+    });
+</script>

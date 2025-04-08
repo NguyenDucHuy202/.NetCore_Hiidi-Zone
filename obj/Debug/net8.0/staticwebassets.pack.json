@@ -7461,12 +7461,440 @@
       "PackagePath": "staticwebassets\\Admin\\vendor\\jquery\\jquery.slim.min.map"
     },
     {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\User\\css\\style.css",
+      "PackagePath": "staticwebassets\\User\\css\\style.css"
+    },
+    {
       "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\APR_logo.webp",
+      "PackagePath": "staticwebassets\\img\\APR_logo.webp"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\AppW.png",
+      "PackagePath": "staticwebassets\\img\\AppW.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\HiidiZone-Logo.jpg",
+      "PackagePath": "staticwebassets\\img\\HiidiZone-Logo.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\HiidiZone-Logo.png",
+      "PackagePath": "staticwebassets\\img\\HiidiZone-Logo.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IP_Desk.png",
+      "PackagePath": "staticwebassets\\img\\IP_Desk.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\default.png",
+      "PackagePath": "staticwebassets\\img\\IPhone\\default.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone-14-plus-blue-1-2-650x650.png",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone-14-plus-blue-1-2-650x650.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone-15-pro-max-blue-1-2-650x650.png",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone-15-pro-max-blue-1-2-650x650.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone-15-pro-max-blue-titan-1-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone-15-pro-max-blue-titan-1-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone-15-pro-max-blue-titan-10-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone-15-pro-max-blue-titan-10-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone-15-pro-max-blue-titan-2-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone-15-pro-max-blue-titan-2-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone-15-pro-max-blue-titan-3-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone-15-pro-max-blue-titan-3-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone-15-pro-max-blue-titan-4-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone-15-pro-max-blue-titan-4-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone-15-pro-max-blue-titan-5-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone-15-pro-max-blue-titan-5-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone-15-pro-max-blue-titan-6-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone-15-pro-max-blue-titan-6-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone-15-pro-max-blue-titan-7-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone-15-pro-max-blue-titan-7-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone-15-pro-max-blue-titan-8-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone-15-pro-max-blue-titan-8-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone-15-pro-max-blue-titan-9-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone-15-pro-max-blue-titan-9-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone-16-pink-thumbnew-650x650.png",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone-16-pink-thumbnew-650x650.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone-16-pro-max-desert-titan-1-638621795564494521-200x200.jpg",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone-16-pro-max-desert-titan-1-638621795564494521-200x200.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone-16-pro-max-desert-titan-10-638621795633165181-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone-16-pro-max-desert-titan-10-638621795633165181-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone-16-pro-max-desert-titan-2-638621795572208419-200x200.jpg",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone-16-pro-max-desert-titan-2-638621795572208419-200x200.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone-16-pro-max-desert-titan-3-638621795578568215-200x200.jpg",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone-16-pro-max-desert-titan-3-638621795578568215-200x200.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone-16-pro-max-desert-titan-4-638621795588787112-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone-16-pro-max-desert-titan-4-638621795588787112-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone-16-pro-max-desert-titan-5-638621795595539246-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone-16-pro-max-desert-titan-5-638621795595539246-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone-16-pro-max-desert-titan-6-638621795603626395-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone-16-pro-max-desert-titan-6-638621795603626395-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone-16-pro-max-desert-titan-7-638621795610778662-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone-16-pro-max-desert-titan-7-638621795610778662-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone-16-pro-max-desert-titan-8-638621795619447667-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone-16-pro-max-desert-titan-8-638621795619447667-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone-16-pro-max-desert-titan-9-638621795626802491-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone-16-pro-max-desert-titan-9-638621795626802491-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone-16-pro-max-titan-sa-mac-thumbnew-650x650.png",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone-16-pro-max-titan-sa-mac-thumbnew-650x650.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone-16-pro-tu-nhien-650x650.png",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone-16-pro-tu-nhien-650x650.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone-16-xanh-la-650x650 - Copy.png",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone-16-xanh-la-650x650 - Copy.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone-16e-black-thumbtz-650x650.png",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone-16e-black-thumbtz-650x650.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone-16e-black-tz-2-638756446516910685-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone-16e-black-tz-2-638756446516910685-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone-16e-black-tz-3-638756446524468363-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone-16e-black-tz-3-638756446524468363-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone-16e-black-tz-4-638756446503324970-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone-16e-black-tz-4-638756446503324970-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone-16e-black-tz-5-638756446531591535-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone-16e-black-tz-5-638756446531591535-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone-16e-black-tz-6-638756446540426235-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone-16e-black-tz-6-638756446540426235-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone-16e-black-tz-7-638756446547840092-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone-16e-black-tz-7-638756446547840092-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone-16e-black-tz-8-638756446555940600-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone-16e-black-tz-8-638756446555940600-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone-16e-black-tz-9-638756446564545590-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone-16e-black-tz-9-638756446564545590-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone_14_plus_pdp_position-1_blue_color-0-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone_14_plus_pdp_position-1_blue_color-0-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone_14_plus_pdp_position-1_blue_color-1-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone_14_plus_pdp_position-1_blue_color-1-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone_14_plus_pdp_position-2_design-2-2-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone_14_plus_pdp_position-2_design-2-2-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone_14_plus_pdp_position-3_camera-3-2-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone_14_plus_pdp_position-3_camera-3-2-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone_14_plus_pdp_position-4_lineup-4-2-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone_14_plus_pdp_position-4_lineup-4-2-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone_14_plus_pdp_position-5_colors-5-2-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone_14_plus_pdp_position-5_colors-5-2-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone_14_plus_pdp_position-6_size_comparison-6-2-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone_14_plus_pdp_position-6_size_comparison-6-2-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone_14_plus_pdp_position-7_featuresspecs-7-2-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone_14_plus_pdp_position-7_featuresspecs-7-2-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\IPhone\\iphone_14_plus_pdp_position-8_accessory-8-2-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\IPhone\\iphone_14_plus_pdp_position-8_accessory-8-2-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\Ipad_Desk.png",
+      "PackagePath": "staticwebassets\\img\\Ipad_Desk.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\MacBook\\Mac-Air-13-M2-xanh-650x650.png",
+      "PackagePath": "staticwebassets\\img\\MacBook\\Mac-Air-13-M2-xanh-650x650.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\MacBook\\apple-macbook-air-m2-2022-16gb-256gb-thumb-650x650.png",
+      "PackagePath": "staticwebassets\\img\\MacBook\\apple-macbook-air-m2-2022-16gb-256gb-thumb-650x650.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\MacBook\\mac-air-m1-13-xam-new-650x650.png",
+      "PackagePath": "staticwebassets\\img\\MacBook\\mac-air-m1-13-xam-new-650x650.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\MacBook\\macbook-air-m1-spgry-01-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\MacBook\\macbook-air-m1-spgry-01-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\MacBook\\macbook-air-m1-spgry-02-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\MacBook\\macbook-air-m1-spgry-02-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\MacBook\\macbook-air-m1-spgry-03-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\MacBook\\macbook-air-m1-spgry-03-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\MacBook\\macbook-air-m1-spgry-04-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\MacBook\\macbook-air-m1-spgry-04-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\MacBook\\macbook-pro-14-inch-m4-pro-topzone-den-thumb-650x650.png",
+      "PackagePath": "staticwebassets\\img\\MacBook\\macbook-pro-14-inch-m4-pro-topzone-den-thumb-650x650.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\MacBook\\macbook-pro-16-inch-m4-den-thumb-650x650.png",
+      "PackagePath": "staticwebassets\\img\\MacBook\\macbook-pro-16-inch-m4-den-thumb-650x650.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\Mac_Desk.png",
+      "PackagePath": "staticwebassets\\img\\Mac_Desk.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\Payment\\Vnpay.png",
+      "PackagePath": "staticwebassets\\img\\Payment\\Vnpay.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\Payment\\applepay.png",
+      "PackagePath": "staticwebassets\\img\\Payment\\applepay.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\Payment\\momo.png",
+      "PackagePath": "staticwebassets\\img\\Payment\\momo.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\Phone14.png",
+      "PackagePath": "staticwebassets\\img\\Phone14.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\Phukien_Desk.png",
+      "PackagePath": "staticwebassets\\img\\Phukien_Desk.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\Phụ kiện\\110-650x650.png",
+      "PackagePath": "staticwebassets\\img\\Phụ kiện\\110-650x650.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\Phụ kiện\\adapter-sac-magsafe-cho-iphone-thumb-650x650.png",
+      "PackagePath": "staticwebassets\\img\\Phụ kiện\\adapter-sac-magsafe-cho-iphone-thumb-650x650.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\Phụ kiện\\adapter-sac-type-c-20w-cho-iphone-ipad-apple-mhje3-101021-023343-650x650.png",
+      "PackagePath": "staticwebassets\\img\\Phụ kiện\\adapter-sac-type-c-20w-cho-iphone-ipad-apple-mhje3-101021-023343-650x650.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\Phụ kiện\\airtag-650x650.png",
+      "PackagePath": "staticwebassets\\img\\Phụ kiện\\airtag-650x650.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\Phụ kiện\\apple-pencil-pro-650x650.png",
+      "PackagePath": "staticwebassets\\img\\Phụ kiện\\apple-pencil-pro-650x650.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\Phụ kiện\\ban-phim-apple-magic-keyboard-usb-c-mxcl3-211124-024348-624-650x650.png",
+      "PackagePath": "staticwebassets\\img\\Phụ kiện\\ban-phim-apple-magic-keyboard-usb-c-mxcl3-211124-024348-624-650x650.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\Phụ kiện\\bao-da-smart-folio-cho-ipad-pro-m4-11-inch-thumb-650x650.png",
+      "PackagePath": "staticwebassets\\img\\Phụ kiện\\bao-da-smart-folio-cho-ipad-pro-m4-11-inch-thumb-650x650.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\Phụ kiện\\cap-chuyen-doi-usb-c-sang-sd-apple-mufg2-trang-thumb-1-2-650x650.png",
+      "PackagePath": "staticwebassets\\img\\Phụ kiện\\cap-chuyen-doi-usb-c-sang-sd-apple-mufg2-trang-thumb-1-2-650x650.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\Phụ kiện\\cap-type-c-type-c-1m-apple-mqkj3-thumb-5-650x650.png",
+      "PackagePath": "staticwebassets\\img\\Phụ kiện\\cap-type-c-type-c-1m-apple-mqkj3-thumb-5-650x650.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\Phụ kiện\\magic-keyboard-thumb-650x650.png",
+      "PackagePath": "staticwebassets\\img\\Phụ kiện\\magic-keyboard-thumb-650x650.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\Phụ kiện\\mieng-dan-kinh-cuong-luc-iphone-16-pro-max-mipow-bj604-cr-thumb-01-638747854581242340-650x650.png",
+      "PackagePath": "staticwebassets\\img\\Phụ kiện\\mieng-dan-kinh-cuong-luc-iphone-16-pro-max-mipow-bj604-cr-thumb-01-638747854581242340-650x650.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\Phụ kiện\\op-lung-iphone-13-iphone-14-nhua-deo-tpu-co-khe-dung-the-jincase-jk1171-thumb-1-638728116554403605-650x650.png",
+      "PackagePath": "staticwebassets\\img\\Phụ kiện\\op-lung-iphone-13-iphone-14-nhua-deo-tpu-co-khe-dung-the-jincase-jk1171-thumb-1-638728116554403605-650x650.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\Phụ kiện\\op-lung-magsafe-iphone-16-pro-max-nhua-trong-apple-thumb-1-638695242643696877-650x650.png",
+      "PackagePath": "staticwebassets\\img\\Phụ kiện\\op-lung-magsafe-iphone-16-pro-max-nhua-trong-apple-thumb-1-638695242643696877-650x650.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\Speaker_Desk.png",
+      "PackagePath": "staticwebassets\\img\\Speaker_Desk.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\Watch_Desk.png",
+      "PackagePath": "staticwebassets\\img\\Watch_Desk.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\_dmca_premi_badge_4.png",
+      "PackagePath": "staticwebassets\\img\\_dmca_premi_badge_4.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\certify-bct.png",
+      "PackagePath": "staticwebassets\\img\\certify-bct.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\handle_cert.png",
+      "PackagePath": "staticwebassets\\img\\handle_cert.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\iPad\\ipad-10-pink-650x650.png",
+      "PackagePath": "staticwebassets\\img\\iPad\\ipad-10-pink-650x650.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\iPad\\ipad-9-grey-650x650.png",
+      "PackagePath": "staticwebassets\\img\\iPad\\ipad-9-grey-650x650.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\iPad\\ipad-air-m2-11-inch-wifi-purple-thumb-650x650.png",
+      "PackagePath": "staticwebassets\\img\\iPad\\ipad-air-m2-11-inch-wifi-purple-thumb-650x650.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\iPad\\ipad-pro-11-inch-wifi-black-thumb-650x650.png",
+      "PackagePath": "staticwebassets\\img\\iPad\\ipad-pro-11-inch-wifi-black-thumb-650x650.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\iPad\\ipad-pro-13-inch-wifi-silver-650x650.png",
+      "PackagePath": "staticwebassets\\img\\iPad\\ipad-pro-13-inch-wifi-silver-650x650.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\icon-fs.png",
+      "PackagePath": "staticwebassets\\img\\icon-fs.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\iphone-15-pro-max-blue-1-2-650x650.png",
+      "PackagePath": "staticwebassets\\img\\iphone-15-pro-max-blue-1-2-650x650.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\iphone-15-pro-max-blue-titan-1-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\iphone-15-pro-max-blue-titan-1-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\iphone-15-pro-max-blue-titan-10-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\iphone-15-pro-max-blue-titan-10-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\iphone-15-pro-max-blue-titan-2-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\iphone-15-pro-max-blue-titan-2-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\iphone-15-pro-max-blue-titan-3-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\iphone-15-pro-max-blue-titan-3-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\iphone-15-pro-max-blue-titan-4-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\iphone-15-pro-max-blue-titan-4-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\iphone-15-pro-max-blue-titan-5-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\iphone-15-pro-max-blue-titan-5-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\iphone-15-pro-max-blue-titan-6-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\iphone-15-pro-max-blue-titan-6-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\iphone-15-pro-max-blue-titan-7-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\iphone-15-pro-max-blue-titan-7-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\iphone-15-pro-max-blue-titan-8-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\iphone-15-pro-max-blue-titan-8-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\iphone-15-pro-max-blue-titan-9-650x650.jpg",
+      "PackagePath": "staticwebassets\\img\\iphone-15-pro-max-blue-titan-9-650x650.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\lienhegiare.jpg",
+      "PackagePath": "staticwebassets\\img\\lienhegiare.jpg"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\logo-topzone-1.png",
+      "PackagePath": "staticwebassets\\img\\logo-topzone-1.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\panelAPods4.png",
+      "PackagePath": "staticwebassets\\img\\panelAPods4.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\panelMacBM2.png",
+      "PackagePath": "staticwebassets\\img\\panelMacBM2.png"
+    },
+    {
+      "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\img\\panelPhone.png",
+      "PackagePath": "staticwebassets\\img\\panelPhone.png"
     },
     {
       "Id": "D:\\Project_ASP.net\\Top-Zone\\Hiidi-Zone-Ecommerce\\Hiidi-Zone-Ecommerce\\wwwroot\\js\\site.js",

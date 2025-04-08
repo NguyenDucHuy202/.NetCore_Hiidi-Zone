@@ -28,6 +28,30 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
+[D:/Project_ASP.net/Top-Zone/Hiidi-Zone-Ecommerce/Hiidi-Zone-Ecommerce/Views/Account/AddAddress.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBZGRBZGRyZXNzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project_ASP.net/Top-Zone/Hiidi-Zone-Ecommerce/Hiidi-Zone-Ecommerce/Views/Account/ChiTietDonHang.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDaGlUaWV0RG9uSGFuZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project_ASP.net/Top-Zone/Hiidi-Zone-Ecommerce/Hiidi-Zone-Ecommerce/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project_ASP.net/Top-Zone/Hiidi-Zone-Ecommerce/Hiidi-Zone-Ecommerce/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project_ASP.net/Top-Zone/Hiidi-Zone-Ecommerce/Hiidi-Zone-Ecommerce/Views/Account/UserProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxVc2VyUHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project_ASP.net/Top-Zone/Hiidi-Zone-Ecommerce/Hiidi-Zone-Ecommerce/Views/Account/XemDonHang.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxYZW1Eb25IYW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Project_ASP.net/Top-Zone/Hiidi-Zone-Ecommerce/Hiidi-Zone-Ecommerce/Views/Admin_QLDM/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5fUUxETVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -46,6 +70,66 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Project_ASP.net/Top-Zone/Hiidi-Zone-Ecommerce/Hiidi-Zone-Ecommerce/Views/Admin_QLDM/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5fUUxETVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project_ASP.net/Top-Zone/Hiidi-Zone-Ecommerce/Hiidi-Zone-Ecommerce/Views/Admin_QLHinhAnhSP/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5fUUxIaW5oQW5oU1BcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project_ASP.net/Top-Zone/Hiidi-Zone-Ecommerce/Hiidi-Zone-Ecommerce/Views/Admin_QLHinhAnhSP/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5fUUxIaW5oQW5oU1BcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project_ASP.net/Top-Zone/Hiidi-Zone-Ecommerce/Hiidi-Zone-Ecommerce/Views/Admin_QLHinhAnhSP/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5fUUxIaW5oQW5oU1BcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project_ASP.net/Top-Zone/Hiidi-Zone-Ecommerce/Hiidi-Zone-Ecommerce/Views/Admin_QLHinhAnhSP/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5fUUxIaW5oQW5oU1BcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project_ASP.net/Top-Zone/Hiidi-Zone-Ecommerce/Hiidi-Zone-Ecommerce/Views/Admin_QLHinhAnhSP/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5fUUxIaW5oQW5oU1BcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project_ASP.net/Top-Zone/Hiidi-Zone-Ecommerce/Hiidi-Zone-Ecommerce/Views/Admin_QLMaGiamGia/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5fUUxNYUdpYW1HaWFcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project_ASP.net/Top-Zone/Hiidi-Zone-Ecommerce/Hiidi-Zone-Ecommerce/Views/Admin_QLMaGiamGia/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5fUUxNYUdpYW1HaWFcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project_ASP.net/Top-Zone/Hiidi-Zone-Ecommerce/Hiidi-Zone-Ecommerce/Views/Admin_QLMaGiamGia/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5fUUxNYUdpYW1HaWFcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project_ASP.net/Top-Zone/Hiidi-Zone-Ecommerce/Hiidi-Zone-Ecommerce/Views/Admin_QLMaGiamGia/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5fUUxNYUdpYW1HaWFcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project_ASP.net/Top-Zone/Hiidi-Zone-Ecommerce/Hiidi-Zone-Ecommerce/Views/Admin_QLMaGiamGia/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5fUUxNYUdpYW1HaWFcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project_ASP.net/Top-Zone/Hiidi-Zone-Ecommerce/Hiidi-Zone-Ecommerce/Views/Admin_QLNguoiDung/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5fUUxOZ3VvaUR1bmdcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project_ASP.net/Top-Zone/Hiidi-Zone-Ecommerce/Hiidi-Zone-Ecommerce/Views/Admin_QLNguoiDung/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5fUUxOZ3VvaUR1bmdcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project_ASP.net/Top-Zone/Hiidi-Zone-Ecommerce/Hiidi-Zone-Ecommerce/Views/Admin_QLNguoiDung/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5fUUxOZ3VvaUR1bmdcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project_ASP.net/Top-Zone/Hiidi-Zone-Ecommerce/Hiidi-Zone-Ecommerce/Views/Admin_QLNguoiDung/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5fUUxOZ3VvaUR1bmdcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project_ASP.net/Top-Zone/Hiidi-Zone-Ecommerce/Hiidi-Zone-Ecommerce/Views/Admin_QLNguoiDung/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5fUUxOZ3VvaUR1bmdcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Project_ASP.net/Top-Zone/Hiidi-Zone-Ecommerce/Hiidi-Zone-Ecommerce/Views/Admin_QLSP/Create.cshtml]
@@ -68,6 +152,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5fUUxTUFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Project_ASP.net/Top-Zone/Hiidi-Zone-Ecommerce/Hiidi-Zone-Ecommerce/Views/GioHang/XemGioHang.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lvSGFuZ1xYZW1HaW9IYW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Project_ASP.net/Top-Zone/Hiidi-Zone-Ecommerce/Hiidi-Zone-Ecommerce/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -76,12 +164,48 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Project_ASP.net/Top-Zone/Hiidi-Zone-Ecommerce/Hiidi-Zone-Ecommerce/Views/SanPhams/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FuUGhhbXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project_ASP.net/Top-Zone/Hiidi-Zone-Ecommerce/Hiidi-Zone-Ecommerce/Views/SanPhams/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FuUGhhbXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project_ASP.net/Top-Zone/Hiidi-Zone-Ecommerce/Hiidi-Zone-Ecommerce/Views/SanPhams/Index_AirPods.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FuUGhhbXNcSW5kZXhfQWlyUG9kcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project_ASP.net/Top-Zone/Hiidi-Zone-Ecommerce/Hiidi-Zone-Ecommerce/Views/SanPhams/Index_AppW.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FuUGhhbXNcSW5kZXhfQXBwVy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project_ASP.net/Top-Zone/Hiidi-Zone-Ecommerce/Hiidi-Zone-Ecommerce/Views/SanPhams/Index_Ipad.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FuUGhhbXNcSW5kZXhfSXBhZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project_ASP.net/Top-Zone/Hiidi-Zone-Ecommerce/Hiidi-Zone-Ecommerce/Views/SanPhams/Index_Iphone.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FuUGhhbXNcSW5kZXhfSXBob25lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project_ASP.net/Top-Zone/Hiidi-Zone-Ecommerce/Hiidi-Zone-Ecommerce/Views/SanPhams/Index_Mac.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FuUGhhbXNcSW5kZXhfTWFjLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project_ASP.net/Top-Zone/Hiidi-Zone-Ecommerce/Hiidi-Zone-Ecommerce/Views/SanPhams/Index_PhuKien.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FuUGhhbXNcSW5kZXhfUGh1S2llbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Project_ASP.net/Top-Zone/Hiidi-Zone-Ecommerce/Hiidi-Zone-Ecommerce/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Project_ASP.net/Top-Zone/Hiidi-Zone-Ecommerce/Hiidi-Zone-Ecommerce/Views/Shared/Layout/Admin/_LayoutAdmin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExheW91dFxBZG1pblxfTGF5b3V0QWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project_ASP.net/Top-Zone/Hiidi-Zone-Ecommerce/Hiidi-Zone-Ecommerce/Views/Shared/Layout/User/_LayoutUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExheW91dFxVc2VyXF9MYXlvdXRVc2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Project_ASP.net/Top-Zone/Hiidi-Zone-Ecommerce/Hiidi-Zone-Ecommerce/Views/Shared/_ValidationScriptsPartial.cshtml]

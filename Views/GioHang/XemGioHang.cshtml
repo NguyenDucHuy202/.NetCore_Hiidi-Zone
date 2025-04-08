@@ -1,0 +1,255 @@
+﻿@model Hiidi_Zone_Ecommerce.Data.GioHang
+@{
+    ViewData["Title"] = "XemGioHang";
+    Layout = "~/Views/Shared/Layout/User/_LayoutUser.cshtml";
+}
+
+<style>
+    /* Container cho giỏ hàng trống */
+    .empty-cart-container {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px; /* Chiều cao tối thiểu để căn giữa đẹp */
+    background-color: #f5f5f5; /* Màu nền nhạt */
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    margin: 20px 0;
+    }
+
+    /* Nội dung bên trong */
+    .empty-cart-content {
+    text-align: center;
+    padding: 20px;
+    }
+
+    /* Hiệu ứng hover cho nút */
+    .empty-cart-content a {
+    background-color: #000000; /* Màu đen */
+    color: #ffffff; /* Chữ trắng */
+    transition: background-color 0.3s ease;
+    }
+
+    .empty-cart-content a:hover {
+    background-color: #333333; /* Đậm hơn khi hover */
+    }
+
+    /* Tinh chỉnh bảng nếu có dữ liệu */
+    .table th, .table td {
+    text-align: center;
+    vertical-align: middle;
+    }
+
+    .table tbody tr:hover {
+    background-color: #f9f9f9; /* Hiệu ứng hover nhẹ */
+    }
+</style>
+<h2>Giỏ hàng của bạn</h2>
+
+@if (Model?.ChiTietGioHangs?.Any() == true)
+{
+    <form asp-controller="GioHang" asp-action="TaoDonHang">
+        <div class="max-w-2xl mx-auto " style="padding-top: 60px;">
+            <div class="flex justify-between items-center mb-4">
+                <a href="#" class="text-gray-500 text-sm">← Về trang chủ TopZone</a>
+                <a href="#" class="text-blue-500 text-sm">Giỏ hàng của bạn</a>
+            </div>
+
+            @{
+                var total = Model.ChiTietGioHangs.Sum(p => p.SanPham.Gia);
+            }
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                @foreach (var item in Model.ChiTietGioHangs)
+                {
+
+                    <div class="flex items-start mb-4">
+
+                        <img src="/img/@item.SanPham.DanhMuc.Ten/@(item.SanPham.HinhAnhSanPhams?.FirstOrDefault(p => p.SanPhamId == item.SanPhamId)?.DuongDan ?? "default.png")" alt="@item.SanPham.Gia" class="w-20 h-20 object-cover rounded-lg mr-4">
+                        <div class="flex-1">
+                            <h2 class="text-lg font-semibold">@item.SanPham.Ten</h2>
+                            <p class="text-gray-500 text-sm">Online giá rẻ quá! <a asp-controller="SanPhams" asp-action ="Details" asp-route-id="@item.SanPhamId" class="text-blue-500">(Xem chi tiết)</a>
+
+                            </p>
+                            <p class="text-gray-500 text-sm">@item.SanPham.Gia.ToString("N0")đ</p>
+                            <p class="text-gray-500 text-sm">Màu: Xanh đen đậm</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-lg font-semibold">@item.SanPham.Gia.ToString("N0")đ</p>
+                            <div class="flex items-center mt-2">
+                                <button class="px-2 py-1 border border-gray-300 rounded">-</button>
+                                <input type="text" value="1" class="w-12 text-center border border-gray-300 mx-2 rounded">
+                                <button class="px-2 py-1 border border-gray-300 rounded">+</button>
+                            </div>
+                            <p class="text-lg font-semibold mt-2">@item.SanPham.Gia.ToString("N0")đ</p>
+                        </div>
+                    </div>
+                }
+                <div class="mb-6 p-4 border rounded-lg bg-gray-100">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Thông tin khách hàng</h3>
+                    @if (Context.Session.GetString("UserName") != null)
+                    {
+                        <div class="space-y-2 text-gray-700">
+                            <p class="text-lg font-medium">
+                                <span class="font-semibold text-gray-900">Họ và tên:</span>
+                                <span class="text-gray-900 font-normal">@Context.Session.GetString("UserName")</span>
+                            </p>
+                            <p class="text-lg font-medium">
+                                <span class="font-semibold text-gray-900">Số điện thoại:</span>
+                                <span class="text-gray-900 font-normal">@Context.Session.GetString("UserPhone")</span>
+                            </p>
+                            <div class="mt-4">
+                                <h4 class="text-lg font-semibold text-gray-800">Địa chỉ nhận hàng:</h4>
+                                @if (Model.NguoiDung.DiaChiNguoiDungs != null && Model.NguoiDung.DiaChiNguoiDungs.Any())
+                                {
+                                    <label for="diaChiSelect" class="block text-lg font-semibold text-gray-900">Chọn địa chỉ nhận hàng:</label>
+                                    <select id="diaChiSelect" name="diaChiId" class="mt-2 p-2 border rounded w-full text-gray-900">
+                                        @foreach (var diaChi in Model.NguoiDung.DiaChiNguoiDungs)
+                                        {
+                                            <option value="@diaChi.Id">
+                                                @diaChi.DiaChi, @diaChi.ThanhPho, @diaChi.QuocGia (@diaChi.MaBuuChinh)
+                                            </option>
+                                        }
+                                    </select>
+                                }
+                                else
+                                {
+                                    <p class="text-gray-500">Chưa có địa chỉ nhận hàng nào.</p>
+                                }
+
+                            </div>
+                            <div>
+
+                                <div>
+                                    <a href="@Url.Action("UserProfile","Account")" class="text-blue-500 hover:underline">Chỉnh sửa thông tin nhận hàng?</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    }
+                    else
+                    {
+                        <p class="text-lg text-red-500">Bạn chưa đăng nhập!</p>
+                    }
+                </div>
+
+
+                @{
+                    var DiemVip = ((int)total) * 0.001;
+                }
+                <div class="mb-4">
+                    <div class="flex justify-between items-center">
+                        <span class="text-lg font-semibold">Tổng tiền:</span>
+                        <input type="hidden" name="TongGia" value="@total" />
+                        <span  class="text-lg font-semibold text-red-500">@total.ToString("N0")đ</span>
+                    </div>
+                    <p class="text-gray-500 text-sm">Điểm tích lũy Quà Tặng VIP: @DiemVip.ToString("N0") điểm</p>
+                </div>
+
+                <!-- Chính sách xử lý dữ liệu cá nhân -->
+                <div class="mb-4">
+                    <div class="flex items-center">
+                        <input type="checkbox" id="agree_policy" class="mr-2">
+                        <label for="agree_policy">Tôi đồng ý với <a href="#" class="text-blue-500">Chính sách xử lý dữ liệu cá nhân của TopZone</a></label>
+                    </div>
+                </div>
+
+                <!-- Chọn phương thức thanh toán -->
+                <div class="mb-4">
+                    <label class="text-lg font-semibold block mb-2">Chọn phương thức thanh toán:</label>
+                    <div class="flex items-center space-x-4">
+                        <input type="radio" id="pay_store" name="payment_method" value="store" class="payment-radio">
+                        <label for="pay_store">Thanh toán tại cửa hàng</label>
+
+                        <input type="radio" id="pay_online" name="payment_method" value="online" class="payment-radio">
+                        <label for="pay_online">Thanh toán online</label>
+                       
+                </div>
+            </div>
+
+            <!-- Danh sách ngân hàng (ẩn mặc định) -->
+            <div id="bank_selection" class="mb-4 hidden">
+                <label class="text-lg font-semibold block mb-2">Chọn ngân hàng:</label>
+                <div class="grid grid-cols-3 gap-4">
+                    <img src="~/img/Payment/applepay.png" alt="Bank 1" class="bank-option w-20 h-10 border cursor-pointer" data-bank="bank1">
+                    <img src="~/img/Payment/momo.png" alt="Bank 2" class="bank-option w-20 h-10 border cursor-pointer" data-bank="bank2">
+                    <img src="~/img/Payment/Vnpay.png" alt="Bank 3" class="bank-option w-20 h-10 border cursor-pointer" data-bank="bank3">
+                </div>
+            </div>
+
+            <!-- Nút đặt hàng -->
+            <button type="submit" id="order_button" class="bg-blue-500 text-white px-4 py-2 rounded mt-4 disabled:opacity-50" disabled>Đặt Hàng</button>
+
+        </div>
+
+       
+    </div>
+    </form>
+}
+else
+{
+    <div class="empty-cart-container">
+        <div class="empty-cart-content">
+            <svg class="w-24 h-24 text-gray-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+            <h3 class="text-xl font-semibold text-gray-800">Giỏ hàng của bạn trống!</h3>
+            <p class="text-gray-500 mt-2">Hãy thêm sản phẩm để bắt đầu mua sắm.</p>
+            <a href="@Url.Action("Index", "SanPhams")" class="mt-6 inline-block px-6 py-3 bg-black text-white rounded-lg font-medium hover:bg-gray-800 transition-colors">
+                Tiếp tục mua sắm
+            </a>
+        </div>
+    </div>
+}
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const payStore = document.getElementById("pay_store");
+        const payOnline = document.getElementById("pay_online");
+        const bankSelection = document.getElementById("bank_selection");
+        const orderButton = document.getElementById("order_button");
+        const agreePolicy = document.getElementById("agree_policy");
+        const bankOptions = document.querySelectorAll(".bank-option");
+        let selectedBank = null;
+
+        function updateOrderButton() {
+            if (agreePolicy.checked && (payStore.checked || (payOnline.checked && selectedBank))) {
+                orderButton.disabled = false;
+            } else {
+                orderButton.disabled = true;
+            }
+        }
+
+        payStore.addEventListener("change", function() {
+            bankSelection.classList.add("hidden");
+            selectedBank = null;
+            updateOrderButton();
+        });
+
+        payOnline.addEventListener("change", function() {
+            bankSelection.classList.remove("hidden");
+            updateOrderButton();
+        });
+
+        agreePolicy.addEventListener("change", updateOrderButton);
+
+        bankOptions.forEach(bank => {
+            bank.addEventListener("click", function() {
+                bankOptions.forEach(b => b.classList.remove("border-blue-500", "border-4"));
+                this.classList.add("border-blue-500", "border-4");
+                selectedBank = this.getAttribute("data-bank");
+                updateOrderButton();
+            });
+        });
+
+        orderButton.addEventListener("click", function() {
+            if (payStore.checked) {
+                alert("Đặt hàng thành công! Bạn có thể đến cửa hàng để thanh toán.");
+            } else if (payOnline.checked && selectedBank) {
+                alert("Bạn đã chọn thanh toán online qua ngân hàng: " + selectedBank);
+            } else {
+                alert("Vui lòng chọn ngân hàng để thanh toán online.");
+            }
+        });
+    });
+</script>

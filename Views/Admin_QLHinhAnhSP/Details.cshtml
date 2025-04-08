@@ -1,0 +1,31 @@
+﻿@model Hiidi_Zone_Ecommerce.Data.HinhAnhSanPham
+
+@{
+    ViewData["Title"] = "Chi tiết hình ảnh sản phẩm";
+    Layout = "~/Views/Shared/Layout/Admin/_LayoutAdmin.cshtml";
+}
+
+<div class="container mt-4">
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white">
+            <h3 class="mb-0">Chi tiết hình ảnh sản phẩm</h3>
+        </div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3">Đường dẫn hình ảnh:</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.DuongDan)</dd>
+
+                <dt class="col-sm-3">ID Sản phẩm:</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.SanPham.Id)</dd>
+            </dl>
+        </div>
+        <div class="card-footer text-end">
+            <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">
+                <i class="fas fa-edit"></i> Chỉnh sửa
+            </a>
+            <a asp-action="Index" class="btn btn-secondary">
+                <i class="fas fa-arrow-left"></i> Quay lại danh sách
+            </a>
+        </div>
+    </div>
+</div>

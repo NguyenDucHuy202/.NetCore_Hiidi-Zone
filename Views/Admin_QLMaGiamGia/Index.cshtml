@@ -1,0 +1,70 @@
+﻿@model IEnumerable<Hiidi_Zone_Ecommerce.Data.MaGiamGium>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/Layout/Admin/_LayoutAdmin.cshtml";
+}
+
+<h1 class="text-center my-4">Danh Sách Mã Giảm Giá</h1>
+
+<div class="d-flex justify-content-end mb-3">
+    <a class="btn btn-primary" asp-action="Create">Tạo Mã Giảm Giá</a>
+</div>
+
+<table class="table table-striped table-bordered">
+    <thead class="thead-dark">
+        <tr>
+            <th>
+               Mã Giảm 
+            </th>
+            <th>
+                Giá trị giảm (%)
+            </th>
+            <th>
+               Ngày hết hạn
+            </th>
+            <th>
+               Số lượng phiếu giảm
+            </th>
+            <th>
+               Trạng thái 
+            </th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ma)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Giam)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgayHetHan)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoLuong)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TrangThai)
+            </td>
+            <td>
+                <a class="btn btn-sm btn-warning" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                <a class="btn btn-sm btn-info" asp-action="Details" asp-route-id="@item.Id">Details</a>
+                <a class="btn btn-sm btn-danger" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+<style>
+    .table th, .table td {
+        vertical-align: middle;
+    }
+    .btn {
+        margin-right: 5px;
+    }
+</style>

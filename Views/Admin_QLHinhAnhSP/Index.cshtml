@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Hiidi_Zone_Ecommerce.Data.HinhAnhSanPham>
+
+@{
+    ViewData["Title"] = "Danh sách Hình Ảnh Sản Phẩm";
+    Layout = "~/Views/Shared/Layout/Admin/_LayoutAdmin.cshtml";
+}
+
+<h1 class="text-center text-primary">Danh sách Hình Ảnh Sản Phẩm</h1>
+
+<p class="text-end">
+    <a asp-action="Create" class="btn btn-success"><i class="bi bi-plus-circle"></i> Thêm Mới</a>
+</p>
+
+<table class="table table-striped table-hover">
+    <thead class="table-dark">
+        <tr>
+            <th>Hình Ảnh</th>
+            <th>Mã Sản Phẩm</th>
+            <th class="text-center">Hành Động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <img src="/img/@item.SanPham.DanhMuc.Ten/@item.DuongDan" alt="Hình sản phẩm" class="img-thumbnail" style="width: 100px; height: auto;">
+                </td>
+                <td>@Html.DisplayFor(modelItem => item.SanPham.Ten)</td>
+                <td class="text-center">
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm"><i class="bi bi-pencil-square"></i> Sửa</a>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm"><i class="bi bi-eye"></i> Xem</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm"><i class="bi bi-trash"></i> Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

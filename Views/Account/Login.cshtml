@@ -1,0 +1,74 @@
+﻿@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/Layout/User/_LayoutUser.cshtml";
+}
+
+<style>
+    body {
+        background-color: rgb(1,1,1);
+        color: white;
+    }
+
+    .card-custom {
+        background-color: #222;
+        border: 1px solid white;
+        color: white;
+        width: 400px;
+    }
+
+    .form-control {
+        background-color: #333;
+        border: 1px solid white;
+        color: white;
+    }
+
+        .form-control::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+    .btn-custom {
+        background-color: white;
+        color: black;
+        font-weight: bold;
+    }
+
+        .btn-custom:hover {
+            background-color: #ccc;
+        }
+
+    a {
+        color: #0d6efd;
+    }
+
+        a:hover {
+            text-decoration: underline;
+        }
+</style>
+
+<div style="padding-top:100px" class="d-flex justify-content-center align-items-center vh-100">
+    <div class="card card-custom shadow-lg p-4">
+        <img src="~/img/HiidiZone-Logo.png" />
+        <h2 class="text-center mb-4">Wellcome back </h2>
+
+        @if (ViewData["ErrorMessage"] != null)
+        {
+            <div class="alert alert-danger">@ViewData["ErrorMessage"]</div>
+        }
+
+        <form asp-controller="Account" asp-action="Login" method="post">
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" name="email" class="form-control" placeholder="Enter your email" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input type="password" name="password" class="form-control" placeholder="Enter your password" required />
+            </div>
+            <button type="submit" class="btn btn-custom w-100">Login</button>
+        </form>
+
+        <div class="text-center mt-3">
+            <p>Don't have an account? <a asp-controller="Account" asp-action="Register">Register here</a></p>
+        </div>
+    </div>
+</div>

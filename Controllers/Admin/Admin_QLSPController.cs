@@ -35,6 +35,7 @@ namespace Hiidi_Zone_Ecommerce.Controllers.Admin
 
             var sanPham = await _context.SanPhams
                 .Include(s => s.DanhMuc)
+                .Include(s=>s.HinhAnhSanPhams)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (sanPham == null)
             {
@@ -47,7 +48,7 @@ namespace Hiidi_Zone_Ecommerce.Controllers.Admin
         // GET: Admin_QLSP/Create
         public IActionResult Create()
         {
-            ViewData["DanhMucId"] = new SelectList(_context.DanhMucs, "Id", "Id");
+            ViewData["DanhMucId"] = new SelectList(_context.DanhMucs, "Id", "Ten");
             return View();
         }
 
@@ -81,7 +82,7 @@ namespace Hiidi_Zone_Ecommerce.Controllers.Admin
             {
                 return NotFound();
             }
-            ViewData["DanhMucId"] = new SelectList(_context.DanhMucs, "Id", "Id", sanPham.DanhMucId);
+            ViewData["DanhMucId"] = new SelectList(_context.DanhMucs, "Id", "Ten", sanPham.DanhMucId);
             return View(sanPham);
         }
 
@@ -117,7 +118,7 @@ namespace Hiidi_Zone_Ecommerce.Controllers.Admin
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["DanhMucId"] = new SelectList(_context.DanhMucs, "Id", "Id", sanPham.DanhMucId);
+            ViewData["DanhMucId"] = new SelectList(_context.DanhMucs, "Id", "Ten", sanPham.DanhMucId);
             return View(sanPham);
         }
 
@@ -155,7 +156,7 @@ namespace Hiidi_Zone_Ecommerce.Controllers.Admin
             return RedirectToAction(nameof(Index));
         }
 
-        private bool SanPhamExists(int id)
+        private bool SanPhamExists(int id)  
         {
             return _context.SanPhams.Any(e => e.Id == id);
         }

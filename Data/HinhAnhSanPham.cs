@@ -11,5 +11,5 @@ public partial class HinhAnhSanPham
 
     public string DuongDan { get; set; } = null!;
 
-    public virtual SanPham SanPham { get; set; } = null!;
+    public virtual SanPham? SanPham { get; set; } = null!;
 }
